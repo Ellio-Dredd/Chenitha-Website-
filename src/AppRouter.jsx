@@ -1,6 +1,6 @@
 // src/Router.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import components
 import Home from "./assets/components/Home";
@@ -15,7 +15,7 @@ function AppRouter() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
